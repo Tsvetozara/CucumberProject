@@ -43,12 +43,12 @@ public class Login {
     }
 
     @Then("User should get a proper warning message")
-    public void user_should_get_a_proper_warning_message(){
+    public void user_should_get_a_proper_warning_message() {
         System.out.println(">> User got a proper warning message");
     }
 
     @When("User don't enter any credentials")
-    public void user_dont_enter_any_credentials(){
+    public void user_dont_enter_any_credentials() {
         System.out.println(">> User has not entered any credentials");
     }
 }

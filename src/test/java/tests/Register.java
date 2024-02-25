@@ -14,32 +14,32 @@ public class Register {
 
     @When("User enters first name {string} into the First Name field")
     public void user_enters_first_name_into_the_first_name_field(String firstNameText) {
-        System.out.println(">> User entered firstname: " +firstNameText+ " into the First Name field");
+        System.out.println(">> User entered firstname: " + firstNameText + " into the First Name field");
     }
 
     @And("User enters lastname {string} into the Last Name field")
     public void user_enters_lastname_into_the_last_name_field(String lastNameText) {
-        System.out.println(">> User has entered lastname: " +lastNameText+ " into the Last Name field");
+        System.out.println(">> User has entered lastname: " + lastNameText + " into the Last Name field");
     }
 
     @And("User enters email address {string} into the Email address field")
     public void user_enters_email_address_into_the_email_address_field(String emailText) {
-        System.out.println(">> User has entered email: " +emailText+ " into the Email address field");
+        System.out.println(">> User has entered email: " + emailText + " into the Email address field");
     }
 
     @And("User enters telephone {string} into the Telephone field")
     public void user_enters_telephone_into_the_telephone_field(String telephoneText) {
-        System.out.println(">> User has entered telephone: " +telephoneText+ " into the Telephone field");
+        System.out.println(">> User has entered telephone: " + telephoneText + " into the Telephone field");
     }
 
     @And("User enters password {string} into the Password field")
     public void user_enters_password_into_the_password_field(String passwordText) {
-        System.out.println(">> User has entered Password: " +passwordText+ " into the Password field");
+        System.out.println(">> User has entered Password: " + passwordText + " into the Password field");
     }
 
     @And("User enters password {string} into the Password Confirm field")
     public void user_enters_password_into_the_password_confirm_field(String passwordText) {
-        System.out.println(">> User has entered Password: " +passwordText+ " into the Password field");
+        System.out.println(">> User has entered Password: " + passwordText + " into the Password field");
     }
 
     @And("User selects Privacy Policy Field")
