@@ -12,14 +12,14 @@ public class Login {
         System.out.println(">> User got navigated to Login page");
     }
 
-    @When("User enters a valid email address {string}")
-    public void user_enters_a_valid_email_address(String emailAddressText) {
-        System.out.println(">> User enters a valid email address: " + emailAddressText);
+    @When("^User enters a valid email address (.+)$")
+    public void user_enters_a_valid_email_address(String email) {
+        System.out.println(">> User enters a valid email address: " +email);
     }
 
-    @And("Enters a valid password {string}")
-    public void enters_a_valid_password(String passwordText) {
-        System.out.println(">> User enters a valid password: " + passwordText);
+    @And("^Enters a valid password (.+)$")
+    public void enters_a_valid_password(String password) {
+        System.out.println(">> User enters a valid password: " +password);
     }
 
     @And("Clicks on Login button")
