@@ -6,24 +6,24 @@ Feature: User Registration
 
   Scenario: Register with mandatory fields
 
-    When User enters first name "Tsvetozara" into the First Name field
-    And User enters lastname "Tosheva" into the Last Name field
-    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
-    And User enters telephone "1234567890" into the Telephone field
-    And User enters password "12345" into the Password field
-    And User enters password "12345" into the Password Confirm field
+    When User enters below details into the fields
+      | firstname | Tsvetozara                  |
+      | lastname  | Tosheva                     |
+      | email     | tsvetozara.beneva@gmail.com |
+      | telephone | 1234567890                  |
+      | password  | 12345                       |
     And User selects Privacy Policy Field
     And User clicks on Continue button
     Then Account should get successfully created
 
   Scenario: Register with all fields
 
-    When User enters first name "Tsvetozara" into the First Name field
-    And User enters lastname "Tosheva" into the Last Name field
-    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
-    And User enters telephone "1234567890" into the Telephone field
-    And User enters password "12345" into the Password field
-    And User enters password "12345" into the Password Confirm field
+    When User enters below details into the fields
+      | firstname | Tsvetozara                  |
+      | lastname  | Tosheva                     |
+      | email     | tsvetozara.beneva@gmail.com |
+      | telephone | 1234567890                  |
+      | password  | 12345                       |
     And User selects Yes for Newsletter
     And User selects Privacy Policy Field
     And User clicks on Continue button
@@ -37,12 +37,12 @@ Feature: User Registration
 
   Scenario: Register with a duplicate email address
 
-    When User enters first name "Tsvetozara" into the First Name field
-    And User enters lastname "Tosheva" into the Last Name field
-    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
-    And User enters telephone "1234567890" into the Telephone field
-    And User enters password "12345" into the Password field
-    And User enters password "12345" into the Password Confirm field
+    When User enters below details into the fields
+      | firstname | Tsvetozara                            |
+      | lastname  | Tosheva                               |
+      | email     | tsvetozara.beneva.duplicate@gmail.com |
+      | telephone | 1234567890                            |
+      | password  | 12345                                 |
     And User selects Yes for Newsletter
     And User selects Privacy Policy Field
     And User clicks on Continue button

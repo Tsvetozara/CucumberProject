@@ -1,9 +1,12 @@
 package tests;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
+import java.util.Map;
 
 public class Register {
 
@@ -12,34 +15,14 @@ public class Register {
         System.out.println(">> User got navigated to Register Account page");
     }
 
-    @When("^User enters first name \"(.+)\" into the First Name field$")
-    public void user_enters_first_name_into_the_first_name_field(String firstNameText) {
-        System.out.println(">> User entered firstname: " + firstNameText + " into the First Name field");
-    }
-
-    @And("^User enters lastname \"(.+)\" into the Last Name field$")
-    public void user_enters_lastname_into_the_last_name_field(String lastNameText) {
-        System.out.println(">> User has entered lastname: " + lastNameText + " into the Last Name field");
-    }
-
-    @And("^User enters email address \"(.+)\" into the Email address field$")
-    public void user_enters_email_address_into_the_email_address_field(String emailText) {
-        System.out.println(">> User has entered email: " + emailText + " into the Email address field");
-    }
-
-    @And("^User enters telephone \"(.+)\" into the Telephone field$")
-    public void user_enters_telephone_into_the_telephone_field(String telephoneText) {
-        System.out.println(">> User has entered telephone: " + telephoneText + " into the Telephone field");
-    }
-
-    @And("^User enters password \"(.+)\" into the Password field$")
-    public void user_enters_password_into_the_password_field(String passwordText) {
-        System.out.println(">> User has entered Password: " + passwordText + " into the Password field");
-    }
-
-    @And("^User enters password \"(.+)\" into the Password Confirm field$")
-    public void user_enters_password_into_the_password_confirm_field(String passwordText) {
-        System.out.println(">> User has entered Password: " + passwordText + " into the Password field");
+    @When("User enters below details into the fields")
+    public void user_enters_below_details_into_the_fields(DataTable dataTable){
+        Map<String, String> map = dataTable.asMap(String.class, String.class);
+        System.out.println("User has entered the first name as "+map.get("firstname"));
+        System.out.println("User has entered the last name as "+map.get("lastname"));
+        System.out.println("User has entered the email address as "+map.get("email"));
+        System.out.println("User has entered the telephone as "+map.get("telephone"));
+        System.out.println("User has entered the password as "+map.get("password"));
     }
 
     @And("^User selects Privacy Policy Field$")
