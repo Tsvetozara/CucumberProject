@@ -1,3 +1,4 @@
+@all
 Feature: User Registration
 
   Background:
@@ -5,9 +6,9 @@ Feature: User Registration
 
   Scenario: Register with mandatory fields
 
-    When User enters first name "Arun" into the First Name field
-    And User enters lastname "Motoori" into the Last Name field
-    And User enters email address "arun.motoori@gmail.com" into the Email address field
+    When User enters first name "Tsvetozara" into the First Name field
+    And User enters lastname "Tosheva" into the Last Name field
+    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
     And User enters telephone "1234567890" into the Telephone field
     And User enters password "12345" into the Password field
     And User enters password "12345" into the Password Confirm field
@@ -17,9 +18,9 @@ Feature: User Registration
 
   Scenario: Register with all fields
 
-    When User enters first name "Arun" into the First Name field
-    And User enters lastname "Motoori" into the Last Name field
-    And User enters email address "arun.motoori@gmail.com" into the Email address field
+    When User enters first name "Tsvetozara" into the First Name field
+    And User enters lastname "Tosheva" into the Last Name field
+    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
     And User enters telephone "1234567890" into the Telephone field
     And User enters password "12345" into the Password field
     And User enters password "12345" into the Password Confirm field
@@ -36,9 +37,9 @@ Feature: User Registration
 
   Scenario: Register with a duplicate email address
 
-    When User enters first name "Arun" into the First Name field
-    And User enters lastname "Motoori" into the Last Name field
-    And User enters email address "arun.motoori@gmail.com" into the Email address field
+    When User enters first name "Tsvetozara" into the First Name field
+    And User enters lastname "Tosheva" into the Last Name field
+    And User enters email address "tsvetozara.beneva@gmail.com" into the Email address field
     And User enters telephone "1234567890" into the Telephone field
     And User enters password "12345" into the Password field
     And User enters password "12345" into the Password Confirm field
