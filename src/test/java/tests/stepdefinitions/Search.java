@@ -1,22 +1,10 @@
-package tests;
+package tests.stepdefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Search {
-
-    @Before("@search")
-    public void setup() {
-        System.out.println("Browser got opened");
-    }
-
-    @After("@search")
-    public void tearDown() {
-        System.out.println("Browser got closed");
-    }
 
     @Given("^User opens the Application$")
     public void user_opens_the_application() {
